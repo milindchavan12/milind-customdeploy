@@ -47,6 +47,8 @@ namespace WebApplication2.Tests.Controllers
             // Act
             ViewResult result = controller.Contact() as ViewResult;
 
+            throw new Exception("tada error");
+
             // Assert
             Assert.IsNotNull(result);
         }
